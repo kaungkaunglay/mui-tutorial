@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Drawer, List, IconButton, ListItemButton, ListItemIcon, ListItemText, colors } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 const DrawerComp = ({links}) => {
-    const [open, setOpen] = useState(false); 
+    const [open, setOpen] = useState(true); 
   return ( 
     <>
     <Drawer PaperProps={{
@@ -22,8 +22,8 @@ const DrawerComp = ({links}) => {
         </List>
     </Drawer>
   
-    <IconButton sx={{marginLeft: 'auto', color: 'white'}} onClick={() => setOpen(!open)}>
-        <MenuIcon sx={{color: 'white'}}/>
+    <IconButton sx={{marginLeft: 'auto', color: 'black'}} onClick={() => setOpen(!open)}>
+        <MenuIcon sx={{color: 'black'}}/>
     </IconButton>
     </>
   )

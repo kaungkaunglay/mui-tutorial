@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Content from '../components/Content'
+import Footer from './components/Footer'
 
 const index = () => {
   return (
@@ -9,6 +10,12 @@ const index = () => {
        <section>
           <Content/>
        </section>
+       <footer>
+        <Footer>
+
+        </Footer>
+       </footer>
+    
     </div>
   )
 }
