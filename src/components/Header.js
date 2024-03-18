@@ -7,6 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { useTheme } from '@emotion/react';
 import DrawerComp from './DrawerComp';
 import Google from '@mui/icons-material/Google';
+import { CustomizedTypography } from '../styles/style';
 const links = ['Products', 'Solution', 'Pricing', 'Enterprise']; 
 const Header = () => {
   const isMatch = useMediaQuery(useTheme().breakpoints.down("md"));
@@ -22,7 +23,7 @@ const Header = () => {
                 {
                   isMatch ? <Box display={'flex'}>  
                     <ApiIcon sx={{color: 'black', padding: 1}}/>
-                    <Typography variant='h6' fontFamily={'fantasy'}>CodeDev</Typography>
+                    <CustomizedTypography variant='h6' fontFamily={'fantasy'}>CodeDev</CustomizedTypography>
                    <DrawerComp links={links}/>
                   </Box> : 
                       <Toolbar>
@@ -53,7 +54,7 @@ const Header = () => {
                 <Box width={'100%'} height={'100vh'}>
                       <video width={'100%'} height={'60%'} autoPlay loop muted playsInline src='video.mp4'></video>
                       <Box display={'flex'} width="100%">
-                        <Typography fontSize={{lg: 30, md: 24, sm: 18, xs: 14}} color='black' textAlign={'center'} margin={'auto'} variant='h4'>Build Your Software with Rainbow Technology Company Limited</Typography>
+                        <CustomizedTypography fontSize={{lg: 30, md: 24, sm: 18, xs: 14}} color='black' textAlign={'center'} margin={'auto'} variant='h4'>Build Your Software with Rainbow Technology Company Limited</CustomizedTypography>
                           
                 </Box>
                 <Box justifyContent={'center'} margin={'auto'} marginTop={5}  width='100%' display={'flex'}>
